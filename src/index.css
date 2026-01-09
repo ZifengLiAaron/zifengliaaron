@@ -4,7 +4,8 @@
 :root {
   --default-font-family: "Roboto", sans-serif;
   --default-font-size: 1.25rem;
-  --default-text-color: #111;
+  --dark-text-color: #111;
+  --light-text-color: #FFFFFF;
   --neutral-color: #4a2b5f;
 
   --primary-color: #7F38D5;
@@ -39,13 +40,20 @@ a {
 }
 
 .btn {
-  background: white;
-  color: black;
+  background: var(--card-background-color);
+  color: var(--dark-text-color);
   padding: 14px 25px;
   font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
   border: 0;
   outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.btn-icon {
+  width: 20px;
+  margin-left: 10px;
 }
